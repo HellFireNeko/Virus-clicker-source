@@ -1,0 +1,270 @@
+:root {
+    --color-0: rgba(255, 0, 0, 0);
+    --color-1: rgb(0, 0, 0);
+    --color-2: rgb(108, 160, 195);
+    --color-3: rgb(255, 255, 255);
+    --color-4: rgb(66, 211, 61);
+    
+    --font-size-h1: 80px;
+    --font-size-h2: 75px;
+    --font-size-h3: 70px;
+
+    --text-font-size-0: 50px;
+    --text-font-size-1: 40px;
+    --text-font-size-1-5: 30px;
+    --text-font-size-2: 25px;
+    --text-font-size-3: 20px;
+
+    --button-font-size-1: 50px;
+    --button-font-size-2: 60px;
+
+    --button-color-1: rgb(207, 255, 149);
+    --button-color-2: rgb(170, 212, 138);
+    --button-color-3: rgb(131, 160, 95);
+    --button-color-4: rgba(207, 255, 149, 0.7);
+
+    --virus-sprite: resource('Sprites/VirusButton');
+
+    --image-tint-1: rgba(255, 255, 255, 1);
+    --image-tint-2: rgba(200, 200, 200, 0.7);
+
+    -unity-font-definition: resource('Font/ThaleahFat_TTF SDF');
+    
+    background-color: var(--color-1);
+    color: var(--color-3);
+}
+
+#CloseButton {
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    left: 0;
+    right: 85%;
+
+    font-size: var(--button-font-size-1);
+    color: var(--color-1);
+
+    background-color: var(--button-color-1);
+    border-radius: 15px;
+}
+
+#CloseButton:hover:enabled {
+    background-color: var(--button-color-2);
+}
+
+#CloseButton:active:enabled {
+    background-color: var(--button-color-3);
+}
+
+#ClickerContainer {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#ClickerButton {
+    background-image: var(--virus-sprite);
+    background-color: var(--color-0);
+
+    -unity-background-image-tint-color: var(--image-tint-1);
+
+    border-color: var(--color-0);
+
+    width: 400px;
+    height: 400px;
+}
+
+#ClickerButton:active {
+    -unity-background-image-tint-color: var(--image-tint-2);
+}
+
+#BuyList {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 70%;
+    right: 0;
+}
+
+#BuyItem {
+    width: 100%;
+    height: 175px;
+
+    background-color: var(--color-2);
+
+    border-radius: 15px;
+
+    border-color: var(--color-3);
+    border-width: 2px;
+}
+
+#BuyItem > .NameContainer {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#BuyItem #MidContainer {
+    height: 100px;
+    width: 100%;
+    flex-direction: row;
+}
+
+#BuyItem #BottomContainer {
+    height: 25px;
+    width: 97%;
+    flex-direction: row;
+}
+
+#BuyItem #NameLabel {
+    width: 97%;
+    height: 20px;
+    
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: -2px;
+
+    font-size: var(--text-font-size-1);
+    color: var(--color-1);
+
+    -unity-text-align: middle-center;
+}
+
+#BuyItem #CostLabel {
+    height: 25px;
+    flex-grow: 1;
+
+    font-size: var(--text-font-size-1);
+    color: var(--color-1);
+    
+    -unity-text-align: middle-center;
+}
+
+#BuyItem #CountLabel {
+    width: 30%;
+    height: 25px;
+
+    font-size: var(--text-font-size-1);
+    color: var(--color-1);
+    
+    -unity-text-align: middle-center;
+}
+
+#BuyItem #BuyButton {
+    width: 30%;
+    height: 90%;
+    margin-top: 5px;
+    border-radius: 15px;
+    background-color: var(--button-color-1);
+    font-size: var(--button-font-size-1);
+    color: var(--color-1);
+}
+
+#BuyItem #BuyButton:hover:enabled {
+    background-color: var(--button-color-2);
+}
+
+#BuyItem #BuyButton:active:enabled {
+    background-color: var(--button-color-3);
+}
+
+#BuyItem #BuyButton:disabled {
+    background-color: var(--button-color-4);
+}
+
+#BuyItem #BuyDescription {
+    width: 70%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-right: 5px;
+    background-color: var(--color-3);
+    border-radius: 15px;
+}
+
+#BuyItem #BuyDescription > #DescriptionText {
+    text-overflow: clip;
+
+    -unity-text-align: middle-center;
+
+    font-size: var(--text-font-size-1-5);
+    color: var(--color-1);
+
+    white-space: normal;
+}
+
+#MoneyDisplay {
+    position: absolute;
+    top: 0;
+    bottom: 90%;
+    left: 25px;
+    right: 30%;
+
+    -unity-text-align: middle-left;
+
+    font-size: var(--text-font-size-0);
+    color: var(--color-3);
+}
+
+#MoneyRateDisplay {
+    position: absolute;
+    top: 10%;
+    bottom: 80%;
+    left: 25px;
+    right: 30%;
+
+    -unity-text-align: middle-left;
+
+    font-size: var(--text-font-size-0);
+    color: var(--color-3);
+}
+
+#Background {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-1);
+}
+
+#MainMenu {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-4);
+    border-radius: 15px;
+}
+
+#Title {
+    font-size: var(--font-size-h1);
+    margin-top: 5px;
+
+    -unity-text-align: middle-center;
+
+    width: 644px;
+}
+
+.MenuButton {
+    background-color: var(--button-color-1);
+    font-size: var(--button-font-size-1);
+    color: var(--color-1);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 634px;
+    height: 100px;
+}
+
+.MenuButton:hover:enabled {
+    background-color: var(--button-color-2);
+    font-size: var(--button-font-size-2);
+}
+
+.MenuButton:active:enabled {
+    background-color: var(--button-color-3);
+}
+
+.MenuButton:disabled {
+    background-color: var(--button-color-4);
+}

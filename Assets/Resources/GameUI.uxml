@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/GameUI.uss?fileID=7433441132597879392&amp;guid=637151317a9c5864c903da4da4af4a5a&amp;type=3#GameUI" />
+    <ui:VisualElement name="ClickerContainer">
+        <ui:Button tabindex="-1" display-tooltip-when-elided="true" name="ClickerButton" />
+    </ui:VisualElement>
+    <ui:ScrollView name="BuyList" />
+    <ui:Label tabindex="-1" text="Debug money display" display-tooltip-when-elided="true" name="MoneyDisplay" />
+    <ui:Label tabindex="-1" text="debug money rate display" display-tooltip-when-elided="true" name="MoneyRateDisplay" />
+    <ui:Button tabindex="-1" text="Quit" display-tooltip-when-elided="true" name="CloseButton" />
+</ui:UXML>

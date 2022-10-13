@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/GameUI.uss?fileID=7433441132597879392&amp;guid=637151317a9c5864c903da4da4af4a5a&amp;type=3#GameUI" />
+    <ui:VisualElement name="BuyItem">
+        <ui:VisualElement name="NameTemplate" class="NameContainer">
+            <ui:Label tabindex="-1" text="Name" display-tooltip-when-elided="true" name="NameLabel" />
+            <ui:VisualElement name="MidContainer">
+                <ui:Button tabindex="-1" text="Buy" display-tooltip-when-elided="true" name="BuyButton" />
+                <ui:VisualElement name="BuyDescription">
+                    <ui:Label tabindex="-1" text="Description" display-tooltip-when-elided="true" name="DescriptionText" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="BottomContainer">
+                <ui:Label tabindex="-1" text="Count" display-tooltip-when-elided="true" name="CountLabel" />
+                <ui:Label tabindex="-1" text="Cost" display-tooltip-when-elided="true" name="CostLabel" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

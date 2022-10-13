@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/GameUI.uss?fileID=7433441132597879392&amp;guid=637151317a9c5864c903da4da4af4a5a&amp;type=3#GameUI" />
+    <ui:VisualElement name="Background">
+        <ui:VisualElement name="MainMenu">
+            <ui:Label tabindex="-1" text="Virus Clicker" display-tooltip-when-elided="true" name="Title" />
+            <ui:Button tabindex="-1" text="Play" display-tooltip-when-elided="true" name="Play" class="MenuButton" />
+            <ui:Button tabindex="-1" text="Reset Game Data" display-tooltip-when-elided="true" name="Reset" class="MenuButton" />
+            <ui:Button tabindex="-1" text="Quit" display-tooltip-when-elided="true" name="Quit" class="MenuButton" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
